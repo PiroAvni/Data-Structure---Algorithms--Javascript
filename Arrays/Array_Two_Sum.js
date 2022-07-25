@@ -64,3 +64,4 @@ function sumTwo2(arr, sum){
 }
 console.log('SUM TWO - BETTER SOLUTION:',sumTwo2([6,6,3,2,1,7], 12))
 sumTwo2([6,4,3,2,1,7], 12)
+

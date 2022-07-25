@@ -25,7 +25,7 @@ Output: 23
 console.log('***** Maximun Subarray - solution 1 *****')
 let maxSubArray = function(nums) {
 
-    // Input = Array
+    // Input = Arra
     let sum = 0
     let max = 0
    
