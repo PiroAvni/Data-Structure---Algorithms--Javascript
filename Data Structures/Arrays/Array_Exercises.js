@@ -1,3 +1,5 @@
+
+console.log('****** ARRAY EXCERISES ********')
 /**
 *  ! Excerise 1 - Arrays
 
