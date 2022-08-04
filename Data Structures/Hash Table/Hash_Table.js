@@ -43,7 +43,7 @@ class HashTable {
             //console.log(this.data)
             if(this.data[i]){
                 console.log('Data Key:',this.data[i][0][0])
-                keysArray.push(this.data[i][0][0])
+              keysArray.push(this.data[i][0][0])
             }
         }
         console.log("key values =",keysArray)
