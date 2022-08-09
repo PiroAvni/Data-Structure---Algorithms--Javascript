@@ -9,13 +9,69 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>Linked List</h1>
+    <h3>Pros</h3>
+    <ul>
+        <li>FAST INSERTION</li>
+        <li>FAST DELETION</li>
+        <li>ORDERED</li>
+        <li>FLEXIBLE SIZE</li>
+    </ul>
+    <br>
+    <h3>Cons</h3>
+    <ul>
+        <li>SlOW LOOKUP</li>
+        <li>MORE MEMORY</li>
+        <li>ORDERED</li>
+        <li>FLEXIBLE SIZE</li>
+    </ul>
+    <BR>
+        
+    <h2> Single or Double LL</h2>
+    <br>
+    <H2> SLL</H2>
+    <h5>PROS</h5>
+    <ul>
+        <li> Simple to implement</li>
+        <li> Requires Less Memory -  less Operations</li>
+        <li> Faster</li>
+    </ul> 
+    <h5>CONS</h5>
+    <ul>
+        <li> Can not be iterated in reverse ir traverse from back to front</li>
+        <li> If we lose the reference to the head node of the list, the list can actually be lost in memory forever.</li>
+    </ul> 
+
+    <p> So Singly List are appropriate to use when you have less memory or memory is really expensive and want to be careful of how much you use.
+        Main goal is for fast insertion, deletion and dont have much searching, especially when you have insertion at the beginning of the list.
+    </p>
+    
+    <br>
+    <H2> DLL</H2>
+    <h5>PROS</h5>
+    <ul>
+        <li> It Can be iterated a or traversed both from the front or from the back</li>
+        <li> Extra operations that will be needed to perform to make sure that when we insert and delete that the previous property is updated as well.</li>
+    </ul>
+        <h5>CONS</h5>
+        <ul>
+        <li> Fairly Complex - requires more memory and  storage because of the extra property.</li>
+        <li> If we lose the reference to the head node of the list, the list can actually be lost in memory forever.</li>
+    </ul> 
+
+    <p> So Doubly Linked List are really good when you dont have that much limitation on memory and when you want good operation for searching 
+        for elements such as searching backwards instead of just forwards.
+    </p>
+
+    <a href="https://coggle.it/diagram/W5E5tqYlrXvFJPsq/t/master-the-interview-click-here-for-course-link">Map </a><BR>
     <a href="https://www.bigocheatsheet.com/">BIG O CHEATSHEET Reference </a><BR>
     <a href="https://www.cs.usfca.edu/~galles/visualization/Algorithms.html">DSA Visual Reference </a><br>
     <a href="https://visualgo.net/en">DSA Reference </a><br>
     <a href="https://algorithm-visualizer.org/">Algo Reference </a><br>
     <a href="https://visualgo.net/en/list?slide=1">Linked List </a><br>
     <script src="./Linked_List.js" async defer></script>
+    <script src="./Doubly_Linked_List.js" async defer></script>
     <script src="" async defer></script>
-    <script src="" async defer></script>
+    
 </body>
 </html>
