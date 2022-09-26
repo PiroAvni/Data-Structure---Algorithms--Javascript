@@ -1,6 +1,6 @@
 console.log(' ****** STACKS ******')
 
-console.log('Stack - Linked Lists')
+console.log('STACKS (LIFO) - Linked Lists')
 
 
 class Node{
@@ -60,3 +60,31 @@ myStack.push('discord');
 //myStack.pop();
 console.log(myStack)
 
+console.log('STACKS (LIFO) - Array')
+
+class Stack2 { 
+  constructor(){
+      this.array = [];
+      console.log('Empty Array:',this.array)
+  }
+
+peek() {
+  return this.array[this.array.length-1];
+ }
+push(value){
+  this.array.push(value);
+  return this;
+}
+pop(){
+  this.array.pop();
+  return this;
+}
+}
+const myStackArray = new Stack2();
+myStackArray.push('google');
+myStackArray.push('udemy');
+myStackArray.push('MS');
+myStackArray.push('discord');
+myStackArray.pop();
+console.log('Peek:',myStackArray.peek());
+console.log(myStackArray)
