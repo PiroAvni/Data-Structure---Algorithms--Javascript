@@ -1,59 +1,161 @@
+<!-- @format -->
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Tree</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Tree</h1>
-    <p>A tree is non-linear and a hierarchical data structure consisting of a collection of nodes such that each node 
-        of the tree stores a value and a list of references to other nodes (the “children”). 
-        This data structure is a specialized method to organize and store data in the computer to be used more effectively.</p>
+    <p>
+      A tree is non-linear and a hierarchical data structure consisting of a
+      collection of nodes such that each node of the tree stores a value and a
+      list of references to other nodes (the “children”). This data structure is
+      a specialized method to organize and store data in the computer to be used
+      more effectively.
+    </p>
 
     <h2>Binary Tree</h2>
-  <p>Binary Tree is a special datastructure used for data storage purposes. A binary tree has a special condition that each node can have a maximum of two children. 
-     A binary tree has the benefits of both an ordered array and a linked list as search is as quick as in a
-     sorted array and insertion or deletion operation are as fast as in linked list.</p>
+    <p>
+      Binary Tree is a special datastructure used for data storage purposes. A
+      binary tree has a special condition that each node can have a maximum of
+      two children. A binary tree has the benefits of both an ordered array and
+      a linked list as search is as quick as in a sorted array and insertion or
+      deletion operation are as fast as in linked list.
+    </p>
     <ul>
-        <li>Each Node can only have either zero, one or two Nodes</li>
-        <li>Each Child can only have one parent.</li>
-       <BR>
-        <li>LOOKUP/ FIND- O(log N)</li>
-        <li>INSERT - O(log N)</li>
-        <li>DELETE / REMOVE - O(log N)</li>
-        
+      <li>Each Node can only have either zero, one or two Nodes</li>
+      <li>Each Child can only have one parent.</li>
+      <br />
+      <li>LOOKUP/ FIND- O(log N)</li>
+      <li>INSERT - O(log N)</li>
+      <li>DELETE / REMOVE - O(log N)</li>
     </ul>
-    <H4>PROS</H4>
+    <h4>PROS</h4>
     <ul>
-        <li>Better than 0(n)</li>
-        <li>Ordered</li>
-        <li>Flexible Size</li>
+      <li>Better than 0(n)</li>
+      <li>Ordered</li>
+      <li>Flexible Size</li>
     </ul>
-    <H4>CONS</H4>
+    <h4>CONS</h4>
     <ul>
-        <li>No 0(1) operation</li>
+      <li>No 0(1) operation</li>
     </ul>
-<BR>
-    <H2>Balance - Binary Search Tree</H2>
-    <Ul>
-        <li>AVL TREE</li>
-        <li>RED / BLACK TREE</li>
-    </Ul>
+    <br />
+    <h2>Balance - Binary Search Tree</h2>
+    <ul>
+      <li>AVL TREE</li>
+      <li>RED / BLACK TREE</li>
+    </ul>
+    <br />
+    <h2>Binary Heap</h2>
+    <p>
+      Heap is a specialized tree-based data structure. Heap is one efficient
+      implementation of an abstract data structure called a priority queue. In a
+      heap, the highest (or lowest) priority element is always stored at the
+      root, thus priority queue is often referred to as heaps irrespective of
+      their implementation. Heap is the most useful data structure when it is
+      necessary to repeatedly remove the object with the highest (or lowest)
+      priority. One of the most common implementations of the heap is the binary
+      heap which is basically a binary tree. A binary heap is basically a binary
+      tree with two additional properties. Shape property: It must be a complete
+      binary tree, which means all the levels of the tree, except the deepest
+      (last) one are fully filled. In case the last level of the tree is not
+      complete, the nodes of that level are filled from left to right. Heap
+      property: All nodes are either greater than or equal to or less than or
+      equal to each of its children. If the parent nodes are greater than their
+      child nodes, the heap is called a Max-Heap, and if the parent nodes are
+      smaller than their child nodes, the heap is called Min-Heap
+    </p>
+    <ul>
+      <li>insert(num): Add a new key to the heap.</li>
+      <li>delete(num): Removes a key from the heap.</li>
+      <li>heapify: Create a (min or max) heap from the given array.</li>
+      <li>
+        findMax or (findMin): Return the max element from the heap or (min).
+      </li>
+      <li>
+        extractMax or (extractMin): Remove and return the max element from the
+        heap or (min).
+      </li>
+      <li>
+        deleteMax or (deleteMin): Remove the max element from the heap or (min).
+      </li>
+      <li>size: Return the size of the heap.</li>
+      <li>isEmpty: Is heap empty or not?.</li>
+      <li>getList: Get the heap as an array.</li>
+    </ul>
+    <h4>PROS</h4>
+    <ul>
+      <li>Better than 0(n)</li>
+      <li>Priority</li>
+      <li>Flexible Size</li>
+      <li>Fast Insert</li>
+    </ul>
+    <h4>CONS</h4>
+    <ul>
+      <li>Slow Lookup</li>
+    </ul>
+    <h2>TRIE</h2>
+    <p>
+      A Trie, also known as a digital tree or prefix tree, is a kind of search
+      tree — an ordered tree data structure used to store a dynamic set or
+      associative array where the keys are usually strings. <br />Trie data
+      structure was described by René de la Briandais in 1959 solely to solve
+      the very problem of representing a set of words. The term “trie” comes
+      from the word retrieval and is usually pronounced “try”, to separate it
+      from other “tree” structures.<br />However, it is basically a tree data
+      structure with certain rules to follow in terms of how it is created and
+      used. It is a tree-like data structure wherein the nodes of the tree store
+      the entire alphabet and strings/words can be retrieved by traversing down
+      a branch path.
+    </p>
+    <ul>
+      <li>insert(word): Adds a new word.</li>
+      <li>remove(word): Removes the given word.</li>
+      <li>contains(word): Checks if Trie has the given word.</li>
+      <li>find(prefix): Returns all the words with given prefix.</li>
+      <br />
+      <li>LOOKUP/ FIND- O(log N)</li>
+      <li>INSERT - O(log N)</li>
+      <li>DELETE / REMOVE - O(log N)</li>
+    </ul>
 
-    <a href="https://coggle.it/diagram/W5E5tqYlrXvFJPsq/t/master-the-interview-click-here-for-course-link">Map </a><BR>
-    <a href="https://www.bigocheatsheet.com/">BIG O CHEATSHEET Reference </a><BR>
-    <a href="https://www.cs.usfca.edu/~galles/visualization/Algorithms.html">DSA Visual Reference </a><br>
-    <a href="https://visualgo.net/en">DSA Reference </a><br>
-    <a href="https://algorithm-visualizer.org/">Algo Reference </a><br>
-    <a href="https://www.tutorialspoint.com/data_structures_algorithms/tree_data_structure.htm">TREE </a><br>
-    <a href="https://www.geeksforgeeks.org/implementation-binary-search-tree-javascript/">Tree code </a><br>
+    <a
+      href="https://coggle.it/diagram/W5E5tqYlrXvFJPsq/t/master-the-interview-click-here-for-course-link"
+      >Map </a
+    ><br />
+    <a href="https://www.bigocheatsheet.com/">BIG O CHEATSHEET Reference </a
+    ><br />
+    <a href="https://www.cs.usfca.edu/~galles/visualization/Algorithms.html"
+      >DSA Visual Reference </a
+    ><br />
+    <a href="https://visualgo.net/en">DSA Reference </a><br />
+    <a href="https://algorithm-visualizer.org/">Algo Reference </a><br />
+    <a
+      href="https://www.tutorialspoint.com/data_structures_algorithms/tree_data_structure.htm"
+      >TREE </a
+    ><br />
+    <a
+      href="https://learnersbucket.com/tutorials/array/heap-data-structure-in-javascript/#:~:text=Implementing%20binary%20heap%20data%20structure%20in%20Javascript.%20Binary,the%202i%2B2%20index%20will%20become%20the%20right%20child."
+      >Heap </a
+    ><br />
+    <a
+      href="https://www.geeksforgeeks.org/implementation-binary-search-tree-javascript/"
+      >Tree code </a
+    ><br />
     <script src="Tree.js" async defer></script>
     <script src="Binary_Tree_Excerises.js" async defer></script>
+    <script src="Binary_Heap_Max.js" async defer></script>
+    <script src="Binary_Heap_Min.js" async defer></script>
+    <script src="Class_Binary_Heap.js" async defer></script>
+    <script src="Priority_Queue1.js" async defer></script>
+    <script src="Priority_Queue2.js" async defer></script>
+    <script src="Trie.js" async defer></script>
     <script src="" async defer></script>
-    
-</body>
+  </body>
 </html>
